@@ -92,14 +92,54 @@
                     <view key="view" contentMode="scaleToFill" id="uCg-Qs-JZv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gorselsec" translatesAutoresizingMaskIntoConstraints="NO" id="ywn-vs-66g">
+                                <rect key="frame" x="20" y="84" width="374" height="294"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yorum yazınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHl-Wj-jWe">
+                                <rect key="frame" x="20" y="407" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Ady-3S-7NE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjA-g4-afn">
+                                <rect key="frame" x="163" y="464" width="89" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VLm-0J-BW2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonTiklandi:" destination="n01-1H-IjT" eventType="touchUpInside" id="wMn-B9-piZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TsB-NN-8B4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xHl-Wj-jWe" firstAttribute="centerX" secondItem="TjA-g4-afn" secondAttribute="centerX" id="0Rb-eD-1Af"/>
+                            <constraint firstItem="TsB-NN-8B4" firstAttribute="bottom" secondItem="TjA-g4-afn" secondAttribute="bottom" constant="299" id="3NU-YJ-jtB"/>
+                            <constraint firstItem="ywn-vs-66g" firstAttribute="trailing" secondItem="uCg-Qs-JZv" secondAttribute="trailingMargin" id="CyW-bw-tDa"/>
+                            <constraint firstItem="ywn-vs-66g" firstAttribute="top" secondItem="TsB-NN-8B4" secondAttribute="top" constant="40" id="cLw-Po-YO6"/>
+                            <constraint firstItem="TjA-g4-afn" firstAttribute="leading" secondItem="TsB-NN-8B4" secondAttribute="leading" constant="163" id="pN4-eY-Weg"/>
+                            <constraint firstItem="ywn-vs-66g" firstAttribute="leading" secondItem="uCg-Qs-JZv" secondAttribute="leadingMargin" id="rm6-KX-Ttk"/>
+                            <constraint firstItem="ywn-vs-66g" firstAttribute="trailing" secondItem="xHl-Wj-jWe" secondAttribute="trailing" id="uS3-gN-kIj"/>
+                            <constraint firstItem="TjA-g4-afn" firstAttribute="top" secondItem="xHl-Wj-jWe" secondAttribute="bottom" constant="23" id="via-4Q-oG6"/>
+                            <constraint firstItem="xHl-Wj-jWe" firstAttribute="top" secondItem="ywn-vs-66g" secondAttribute="bottom" constant="29" id="vjL-ps-HJ3"/>
+                            <constraint firstItem="ywn-vs-66g" firstAttribute="leading" secondItem="xHl-Wj-jWe" secondAttribute="leading" id="w3c-qg-utZ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="seal.fill" catalog="system" id="KAI-X8-1sY"/>
+                    <connections>
+                        <outlet property="imageView" destination="ywn-vs-66g" id="R7w-DQ-l1n"/>
+                        <outlet property="yorumTextField" destination="xHl-Wj-jWe" id="G4G-t1-v6x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-Q8-zdg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="358"/>
+            <point key="canvasLocation" x="1757.9710144927537" y="357.58928571428572"/>
         </scene>
         <!--Settings-->
         <scene sceneID="xst-4z-GcL">
@@ -172,6 +212,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gorselsec" width="721" height="521"/>
         <image name="mosaic.fill" catalog="system" width="128" height="114"/>
         <image name="seal.fill" catalog="system" width="128" height="128"/>
         <image name="sun.min.fill" catalog="system" width="128" height="121"/>
