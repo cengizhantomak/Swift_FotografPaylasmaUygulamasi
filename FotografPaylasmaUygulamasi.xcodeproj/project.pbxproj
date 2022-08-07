@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DCB9E58A7CCBFEBACD3D3B4 /* Pods_FotografPaylasmaUygulamasi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C34B4200FEDE6B1879EC31 /* Pods_FotografPaylasmaUygulamasi.framework */; };
 		81755B77289FCF5300ED3DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81755B76289FCF5300ED3DF7 /* AppDelegate.swift */; };
 		81755B79289FCF5300ED3DF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81755B78289FCF5300ED3DF7 /* SceneDelegate.swift */; };
 		81755B7B289FCF5300ED3DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81755B7A289FCF5300ED3DF7 /* ViewController.swift */; };
 		81755B7E289FCF5300ED3DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81755B7C289FCF5300ED3DF7 /* Main.storyboard */; };
 		81755B80289FCF5500ED3DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81755B7F289FCF5500ED3DF7 /* Assets.xcassets */; };
 		81755B83289FCF5500ED3DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81755B81289FCF5500ED3DF7 /* LaunchScreen.storyboard */; };
+		81755B8B289FDDDA00ED3DF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81755B8A289FDDDA00ED3DF7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BCC3BB63FAE8FA29FAC21A4 /* Pods-FotografPaylasmaUygulamasi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FotografPaylasmaUygulamasi.debug.xcconfig"; path = "Target Support Files/Pods-FotografPaylasmaUygulamasi/Pods-FotografPaylasmaUygulamasi.debug.xcconfig"; sourceTree = "<group>"; };
+		51C34B4200FEDE6B1879EC31 /* Pods_FotografPaylasmaUygulamasi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FotografPaylasmaUygulamasi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81755B73289FCF5300ED3DF7 /* FotografPaylasmaUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotografPaylasmaUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81755B76289FCF5300ED3DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81755B78289FCF5300ED3DF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		81755B7F289FCF5500ED3DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81755B82289FCF5500ED3DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81755B84289FCF5500ED3DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81755B8A289FDDDA00ED3DF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4EE20363DEEEE716991C615 /* Pods-FotografPaylasmaUygulamasi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FotografPaylasmaUygulamasi.release.xcconfig"; path = "Target Support Files/Pods-FotografPaylasmaUygulamasi/Pods-FotografPaylasmaUygulamasi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCB9E58A7CCBFEBACD3D3B4 /* Pods_FotografPaylasmaUygulamasi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEEA2ABB2CFF49DC2718500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BCC3BB63FAE8FA29FAC21A4 /* Pods-FotografPaylasmaUygulamasi.debug.xcconfig */,
+				B4EE20363DEEEE716991C615 /* Pods-FotografPaylasmaUygulamasi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D9CD31DCC14E548BF97E034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51C34B4200FEDE6B1879EC31 /* Pods_FotografPaylasmaUygulamasi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		81755B6A289FCF5300ED3DF7 = {
 			isa = PBXGroup;
 			children = (
 				81755B75289FCF5300ED3DF7 /* FotografPaylasmaUygulamasi */,
 				81755B74289FCF5300ED3DF7 /* Products */,
+				0BEEA2ABB2CFF49DC2718500 /* Pods */,
+				5D9CD31DCC14E548BF97E034 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 				81755B7F289FCF5500ED3DF7 /* Assets.xcassets */,
 				81755B81289FCF5500ED3DF7 /* LaunchScreen.storyboard */,
 				81755B84289FCF5500ED3DF7 /* Info.plist */,
+				81755B8A289FDDDA00ED3DF7 /* GoogleService-Info.plist */,
 			);
 			path = FotografPaylasmaUygulamasi;
 			sourceTree = "<group>";
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81755B87289FCF5500ED3DF7 /* Build configuration list for PBXNativeTarget "FotografPaylasmaUygulamasi" */;
 			buildPhases = (
+				196599863D568E03C4DB81DC /* [CP] Check Pods Manifest.lock */,
 				81755B6F289FCF5300ED3DF7 /* Sources */,
 				81755B70289FCF5300ED3DF7 /* Frameworks */,
 				81755B71289FCF5300ED3DF7 /* Resources */,
+				BAA5FC03C2628B8E30549501 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				81755B83289FCF5500ED3DF7 /* LaunchScreen.storyboard in Resources */,
+				81755B8B289FDDDA00ED3DF7 /* GoogleService-Info.plist in Resources */,
 				81755B80289FCF5500ED3DF7 /* Assets.xcassets in Resources */,
 				81755B7E289FCF5300ED3DF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196599863D568E03C4DB81DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FotografPaylasmaUygulamasi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA5FC03C2628B8E30549501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FotografPaylasmaUygulamasi/Pods-FotografPaylasmaUygulamasi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FotografPaylasmaUygulamasi/Pods-FotografPaylasmaUygulamasi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FotografPaylasmaUygulamasi/Pods-FotografPaylasmaUygulamasi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81755B6F289FCF5300ED3DF7 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		81755B88289FCF5500ED3DF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCC3BB63FAE8FA29FAC21A4 /* Pods-FotografPaylasmaUygulamasi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +384,7 @@
 		};
 		81755B89289FCF5500ED3DF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EE20363DEEEE716991C615 /* Pods-FotografPaylasmaUygulamasi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
