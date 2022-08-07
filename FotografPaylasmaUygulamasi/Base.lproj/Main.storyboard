@@ -88,7 +88,7 @@
         <!--Upload-->
         <scene sceneID="P3Q-aw-EFE">
             <objects>
-                <viewController id="n01-1H-IjT" sceneMemberID="viewController">
+                <viewController id="n01-1H-IjT" customClass="UploadViewController" customModule="FotografPaylasmaUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uCg-Qs-JZv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,10 +101,43 @@
             </objects>
             <point key="canvasLocation" x="1758" y="358"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="xst-4z-GcL">
+            <objects>
+                <viewController id="UJ4-0E-BfY" customClass="SettingsViewController" customModule="FotografPaylasmaUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6vf-wT-aEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rX-9v-006">
+                                <rect key="frame" x="165.5" y="432.5" width="83" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Çıkış Yap"/>
+                                <connections>
+                                    <action selector="cikisYapTiklandi:" destination="UJ4-0E-BfY" eventType="touchUpInside" id="Av1-Bk-t5F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Fw-Ek-3lz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4rX-9v-006" firstAttribute="centerY" secondItem="6vf-wT-aEZ" secondAttribute="centerY" id="ioJ-ER-67K"/>
+                            <constraint firstItem="4rX-9v-006" firstAttribute="centerX" secondItem="6vf-wT-aEZ" secondAttribute="centerX" id="nPz-Ps-Wwj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="sun.min.fill" catalog="system" id="aWZ-3V-kG6"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="gDc-KM-g42"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W41-pZ-4sL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.9710144927537" y="1067.4107142857142"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="5Wh-FF-A9q">
             <objects>
-                <viewController id="dyZ-n4-vKc" sceneMemberID="viewController">
+                <viewController id="dyZ-n4-vKc" customClass="FeedViewController" customModule="FotografPaylasmaUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pzf-jP-XhO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +163,7 @@
                     <connections>
                         <segue destination="dyZ-n4-vKc" kind="relationship" relationship="viewControllers" id="Qgq-62-SZx"/>
                         <segue destination="n01-1H-IjT" kind="relationship" relationship="viewControllers" id="mjK-ZG-Dba"/>
+                        <segue destination="UJ4-0E-BfY" kind="relationship" relationship="viewControllers" id="9MN-ZP-ib4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YH5-Qe-W97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -140,6 +174,7 @@
     <resources>
         <image name="mosaic.fill" catalog="system" width="128" height="114"/>
         <image name="seal.fill" catalog="system" width="128" height="128"/>
+        <image name="sun.min.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

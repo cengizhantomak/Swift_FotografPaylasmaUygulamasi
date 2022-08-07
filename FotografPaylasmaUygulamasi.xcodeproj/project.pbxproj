@@ -15,6 +15,9 @@
 		81755B80289FCF5500ED3DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81755B7F289FCF5500ED3DF7 /* Assets.xcassets */; };
 		81755B83289FCF5500ED3DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81755B81289FCF5500ED3DF7 /* LaunchScreen.storyboard */; };
 		81755B8B289FDDDA00ED3DF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81755B8A289FDDDA00ED3DF7 /* GoogleService-Info.plist */; };
+		81755B8D28A00A6800ED3DF7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81755B8C28A00A6800ED3DF7 /* FeedViewController.swift */; };
+		81755B8F28A00A7F00ED3DF7 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81755B8E28A00A7F00ED3DF7 /* UploadViewController.swift */; };
+		81755B9128A00A9400ED3DF7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81755B9028A00A9400ED3DF7 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		81755B82289FCF5500ED3DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81755B84289FCF5500ED3DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81755B8A289FDDDA00ED3DF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81755B8C28A00A6800ED3DF7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		81755B8E28A00A7F00ED3DF7 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		81755B9028A00A9400ED3DF7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B4EE20363DEEEE716991C615 /* Pods-FotografPaylasmaUygulamasi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FotografPaylasmaUygulamasi.release.xcconfig"; path = "Target Support Files/Pods-FotografPaylasmaUygulamasi/Pods-FotografPaylasmaUygulamasi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +56,6 @@
 				1BCC3BB63FAE8FA29FAC21A4 /* Pods-FotografPaylasmaUygulamasi.debug.xcconfig */,
 				B4EE20363DEEEE716991C615 /* Pods-FotografPaylasmaUygulamasi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +91,9 @@
 				81755B76289FCF5300ED3DF7 /* AppDelegate.swift */,
 				81755B78289FCF5300ED3DF7 /* SceneDelegate.swift */,
 				81755B7A289FCF5300ED3DF7 /* ViewController.swift */,
+				81755B8C28A00A6800ED3DF7 /* FeedViewController.swift */,
+				81755B8E28A00A7F00ED3DF7 /* UploadViewController.swift */,
+				81755B9028A00A9400ED3DF7 /* SettingsViewController.swift */,
 				81755B7C289FCF5300ED3DF7 /* Main.storyboard */,
 				81755B7F289FCF5500ED3DF7 /* Assets.xcassets */,
 				81755B81289FCF5500ED3DF7 /* LaunchScreen.storyboard */,
@@ -212,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81755B7B289FCF5300ED3DF7 /* ViewController.swift in Sources */,
+				81755B8F28A00A7F00ED3DF7 /* UploadViewController.swift in Sources */,
 				81755B77289FCF5300ED3DF7 /* AppDelegate.swift in Sources */,
+				81755B8D28A00A6800ED3DF7 /* FeedViewController.swift in Sources */,
 				81755B79289FCF5300ED3DF7 /* SceneDelegate.swift in Sources */,
+				81755B9128A00A9400ED3DF7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
