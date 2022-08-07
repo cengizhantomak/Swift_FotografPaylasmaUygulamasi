@@ -20,7 +20,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func girisYapTiklandi(_ sender: Any) {
-        
+        if emailTextField.text != "" && sifreTextField.text != "" {
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: sifreTextField.text!) { authdataresult, error in
+                if error != nil {
+                    self.hataMesaji(titleInput: "Hata!", messageInput: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin!")
+                } else {
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+            
+        } else {
+            self.hataMesaji(titleInput: "Hata!", messageInput: "eMail ve Parola Giriniz!")
+        }
     }
     
     @IBAction func kayitOlTiklandi(_ sender: Any) {
@@ -28,14 +39,14 @@ class ViewController: UIViewController {
             //kayıt olma işlemleri
             Auth.auth().createUser(withEmail: emailTextField.text!, password: sifreTextField.text!) { authdataresult, error in
                 if error != nil {
-                    self.hataMesaji(titleInput: "Hata!", messageInput: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin")
+                    self.hataMesaji(titleInput: "Hata!", messageInput: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin!")
                 } else {
                     self.performSegue(withIdentifier: "toFeedVC", sender: nil)
                 }
             }
             
         } else {
-            hataMesaji(titleInput: "Hata!", messageInput: "Kullanıcı Adı ve Şifre Giriniz!")
+            hataMesaji(titleInput: "Hata!", messageInput: "eMail ve Parola Giriniz!")
         }
     }
     
