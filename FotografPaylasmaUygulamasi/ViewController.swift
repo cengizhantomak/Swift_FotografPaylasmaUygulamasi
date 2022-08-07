@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -22,7 +24,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func kayitOlTiklandi(_ sender: Any) {
-        performSegue(withIdentifier: "toFeedVC", sender: nil)
+        if emailTextField.text != "" && sifreTextField.text != "" {
+            //kayıt olma işlemleri
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: sifreTextField.text!) { authdataresult, error in
+                if error != nil {
+                    self.hataMesaji(titleInput: "Hata!", messageInput: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin")
+                } else {
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+            
+        } else {
+            hataMesaji(titleInput: "Hata!", messageInput: "Kullanıcı Adı ve Şifre Giriniz!")
+        }
+    }
+    
+    func hataMesaji(titleInput: String, messageInput: String) {
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
