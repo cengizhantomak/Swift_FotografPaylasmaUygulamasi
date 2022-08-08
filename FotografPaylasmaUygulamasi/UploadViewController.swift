@@ -9,6 +9,7 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseFirestore
 
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -56,8 +57,21 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                     imageReference.downloadURL { (url, error) in
                         if error == nil {
                             let imageUrl = url?.absoluteString
-                            print(imageUrl)
                             
+                            if let imageUrl = imageUrl {
+                                
+                                let firestoreDatabase = Firestore.firestore()
+                                
+                                let firestorePost = ["gorselurl" : imageUrl, "yorum" : self.yorumTextField.text!, "email" : Auth.auth().currentUser!.email, "tarih" : FieldValue.serverTimestamp()] as [String : Any]
+                                
+                                firestoreDatabase.collection("Post").addDocument(data: firestorePost) { (error) in
+                                    if error != nil {
+                                        self.hataMesejiGoster(title: "Hata!", message: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin!")
+                                    } else {
+                                        
+                                    }
+                                }
+                            }
                         }
                     }
                 }
