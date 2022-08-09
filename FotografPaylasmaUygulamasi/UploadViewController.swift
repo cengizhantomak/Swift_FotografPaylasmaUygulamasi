@@ -68,7 +68,9 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                     if error != nil {
                                         self.hataMesejiGoster(title: "Hata!", message: error?.localizedDescription ?? "Hata Aldınız, Tekrar Deneyin!")
                                     } else {
-                                        
+                                        self.imageView.image = UIImage(named: "gorselsec")
+                                        self.yorumTextField.text = ""
+                                        self.tabBarController?.selectedIndex = 0
                                     }
                                 }
                             }
