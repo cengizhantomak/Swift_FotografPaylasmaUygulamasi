@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
+import SDWebImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -36,6 +37,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print(error?.localizedDescription)
             } else {
                 if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    self.emailDizisi.removeAll(keepingCapacity: false)
+                    self.gorselDizisi.removeAll(keepingCapacity: false)
+                    self.yorumDizisi.removeAll(keepingCapacity: false)
+                    
                     for document in snapshot!.documents {
                         //let documentId = document.documentID
                         
@@ -69,7 +75,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
         cell.emailText.text = emailDizisi[indexPath.row]
         cell.yorumText.text = yorumDizisi[indexPath.row]
-        cell.postImageView.image = UIImage(named: "gorselsec")
+        cell.postImageView.sd_setImage(with: URL(string: self.gorselDizisi[indexPath.row]))
         return cell
     }
     
